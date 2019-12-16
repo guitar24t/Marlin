@@ -130,15 +130,15 @@
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_BIGTREE_SKR_PRO_V1_1
+  #define MOTHERBOARD BOARD_BIGTREE_SKR_V1_3
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "HT_Ender3Pro"
+#define CUSTOM_MACHINE_NAME "HTEnder3Pro"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like http://www.uuidgenerator.net/version4
-#define MACHINE_UUID "a927077a-80a1-4300-a41f-7d21556f6ca7"
+#define MACHINE_UUID "b4b32f6f-79ef-4391-8e8f-a7ef4b6e02c8"
 
 // @section extruder
 
@@ -444,7 +444,7 @@
 // Above this temperature the heater will be switched off.
 // This can protect components from overheating, but NOT from shorts and failures.
 // (Use MINTEMP for thermistor short/failure protection.)
-#define HEATER_0_MAXTEMP 295
+#define HEATER_0_MAXTEMP 325
 #define HEATER_1_MAXTEMP 295
 #define HEATER_2_MAXTEMP 295
 #define HEATER_3_MAXTEMP 295
@@ -926,7 +926,8 @@
  * Specify a Probe position as { X, Y, Z }
  */
 //#define NOZZLE_TO_PROBE_OFFSET { -44, -14, -4.61 }
-#define NOZZLE_TO_PROBE_OFFSET { -44, -14, -4.61 }
+// #define NOZZLE_TO_PROBE_OFFSET { -44, -14, -4.65 }
+#define NOZZLE_TO_PROBE_OFFSET { -44, -14, -2.36 }
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
@@ -1025,14 +1026,14 @@
 // @section machine
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-#define INVERT_X_DIR false
-#define INVERT_Y_DIR false
-#define INVERT_Z_DIR true
+#define INVERT_X_DIR true
+#define INVERT_Y_DIR true
+#define INVERT_Z_DIR false
 
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
@@ -1328,8 +1329,8 @@
 #endif
 
 // Homing speeds (mm/m)
-#define HOMING_FEEDRATE_XY (25*60)
-#define HOMING_FEEDRATE_Z  (6*60)
+#define HOMING_FEEDRATE_XY (40*60)
+#define HOMING_FEEDRATE_Z  (10*60)
 
 // Validate that endstops are triggered on homing moves
 #define VALIDATE_HOMING_ENDSTOPS
@@ -1447,7 +1448,7 @@
 #define PREHEAT_1_FAN_SPEED   255 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "PETG"
-#define PREHEAT_2_TEMP_HOTEND 225
+#define PREHEAT_2_TEMP_HOTEND 235
 #define PREHEAT_2_TEMP_BED     65
 #define PREHEAT_2_FAN_SPEED   255 // Value from 0 to 255
 
@@ -1703,7 +1704,7 @@
 //
 // Add individual axis homing items (Home X, Home Y, and Home Z) to the LCD menu.
 //
-//#define INDIVIDUAL_AXIS_HOMING_MENU
+#define INDIVIDUAL_AXIS_HOMING_MENU
 
 //
 // SPEAKER/BUZZER
