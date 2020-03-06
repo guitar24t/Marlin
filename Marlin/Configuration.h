@@ -450,7 +450,7 @@
 #define HEATER_3_MAXTEMP 295
 #define HEATER_4_MAXTEMP 295
 #define HEATER_5_MAXTEMP 295
-#define BED_MAXTEMP      140
+#define BED_MAXTEMP      150
 
 //===========================================================================
 //============================= PID Settings ================================
@@ -513,7 +513,7 @@
  * heater. If your configuration is significantly different than this and you don't understand
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  */
-//#define PIDTEMPBED
+#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
