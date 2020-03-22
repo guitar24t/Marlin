@@ -931,10 +931,10 @@
  */
 //#define NOZZLE_TO_PROBE_OFFSET { -44, -14, -4.61 }
 // #define NOZZLE_TO_PROBE_OFFSET { -44, -14, -4.65 }
-#define NOZZLE_TO_PROBE_OFFSET { -44, -14, -2.36 }
+#define NOZZLE_TO_PROBE_OFFSET { -44, -14, -1.25 }
 
 // Certain types of probes need to stay away from edges
-#define MIN_PROBE_EDGE 10
+#define MIN_PROBE_EDGE 25
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
@@ -1062,8 +1062,8 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 220
-#define Y_BED_SIZE 220
+#define X_BED_SIZE 235
+#define Y_BED_SIZE 235
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
