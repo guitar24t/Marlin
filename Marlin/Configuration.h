@@ -549,9 +549,9 @@
   //#define DEFAULT_bedKi 1.41
   //#define DEFAULT_bedKd 1675.16
 
-#define DEFAULT_bedKp 44.22
-#define DEFAULT_bedKi 7.60
-#define DEFAULT_bedKd 171.44
+#define DEFAULT_bedKp 40.20
+#define DEFAULT_bedKi 0.44
+#define DEFAULT_bedKd 2448.77
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -966,10 +966,10 @@
  */
 //#define NOZZLE_TO_PROBE_OFFSET { -44, -14, -4.61 }
 // #define NOZZLE_TO_PROBE_OFFSET { -44, -14, -4.65 }
-#define NOZZLE_TO_PROBE_OFFSET { -44, -14, -1.25 }
+#define NOZZLE_TO_PROBE_OFFSET { -44, -14, -3.09 }
 
 // Certain types of probes need to stay away from edges
-#define MIN_PROBE_EDGE 25
+#define MIN_PROBE_EDGE 30
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
@@ -1332,7 +1332,7 @@
 #define LEVEL_BED_CORNERS
 
 #if ENABLED(LEVEL_BED_CORNERS)
-  #define LEVEL_CORNERS_INSET_LFRB { 30, 30, 30, 30 } // (mm) Left, Front, Right, Back insets
+  #define LEVEL_CORNERS_INSET_LFRB { 25, 50, 25, 50 } // (mm) Left, Front, Right, Back insets
   #define LEVEL_CORNERS_HEIGHT      0.0   // (mm) Z height of nozzle at leveling points
   #define LEVEL_CORNERS_Z_HOP       4.0   // (mm) Z height of nozzle between leveling points
   //#define LEVEL_CENTER_TOO              // Move to the center after the last corner
