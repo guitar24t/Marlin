@@ -966,7 +966,7 @@
  */
 //#define NOZZLE_TO_PROBE_OFFSET { -44, -14, -4.61 }
 // #define NOZZLE_TO_PROBE_OFFSET { -44, -14, -4.65 }
-#define NOZZLE_TO_PROBE_OFFSET { -44, -14, -3.09 }
+#define NOZZLE_TO_PROBE_OFFSET { -44, -14, -3.47 }
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 30
